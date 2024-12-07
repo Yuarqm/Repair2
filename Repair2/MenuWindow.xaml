@@ -1,0 +1,25 @@
+﻿<Window x:Class="Repair2.MenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Repair2"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d"
+        Title="MenuWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Button x:Name="EnterOrder" Content="Новый заказ" Height="111" Width="223" Margin="0,10,0,0" Click="EnterOrder_Click"/>
+            <Button x:Name="EditOrder" Content="Обработать заявку" Height="111" Width="223" Margin="0,10,0,0" Click="EditOrder_Click"/>
+            <Button x:Name="ProccesOrder" Content="Выполнение заявку" Height="113" Width="222" Margin="0,10,0,0" Click="ProccesOrder_Click"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <Button Content="Отсчет о выполенной работе" Margin="0,10,0,0" Height="136" Width="289"/>
+            <Button Content="Мониторинг и анализ" Margin="0,10,0,0" Height="113" Width="296"/>
+        </StackPanel>
+    </Grid>
+</Window>

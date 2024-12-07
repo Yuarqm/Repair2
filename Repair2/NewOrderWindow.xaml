@@ -1,0 +1,28 @@
+﻿<Window x:Class="Repair2.NewOrderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Repair2"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d"
+        Title="NewOrderWindow" Height="650" Width="500">
+    <Grid>
+        <StackPanel>
+            <Button x:Name="Back" Content="Назад" Width="80" Margin="0,5,393,0" Click="Back_Click"/>
+            <Label Content="Тип оборудования" HorizontalAlignment="Center" Margin="0,20,0,0"/>
+            <TextBox TextWrapping="Wrap" Width="495" Margin="0,5,0,0" Height="35" TextAlignment="Center" MaxLength="20"/>
+            <Label Content="Серийный номер" HorizontalAlignment="Center" Margin="0,5,0,0"/>
+            <TextBox TextWrapping="Wrap" Width="495" Margin="0,5,0,0" Height="35" TextAlignment="Center" MaxLength="20"/>
+            <Label Content="Приоритет" HorizontalAlignment="Center" Margin="0,5,0,0"/>
+            <TextBox TextWrapping="Wrap" Width="495" Margin="0,5,0,0" Height="35" TextAlignment="Center" MaxLength="20"/>
+            <Label Content="ФИО" HorizontalAlignment="Center" Margin="0,5,0,0"/>
+            <TextBox Width="495" Margin="0,5,0,0" Height="35" TextAlignment="Center" MaxLength="20"/>
+            <Label Content="Тип неисправности" HorizontalAlignment="Center" Margin="0,5,0,0"/>
+            <TextBox Width="495" Margin="0,5,0,0" Height="35" TextAlignment="Center" MaxLength="20"/>
+            <Label Content="Описание проблемы" HorizontalAlignment="Center" Margin="0,5,0,0"/>
+            <TextBox Width="495" Margin="0,5,0,0" Height="35" TextAlignment="Center" MaxLength="20"/>
+            <Button x:Name="AddNewOrderButton" Content="Добавить заказ" Width="202" Height="55" Margin="20,15,0,0" Padding="9,1,1,1"/>
+        </StackPanel>
+    </Grid>
+</Window>
